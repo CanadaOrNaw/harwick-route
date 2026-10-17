@@ -1,0 +1,911 @@
+{
+  "schema": 1,
+  "project": "harwick-route",
+  "author": "harwick-route-author (assigned project agent)",
+  "sources": [
+    {
+      "path": "index.html",
+      "role": "Complete renderer, DOM/CSS, external imports, procedural textures, scene construction, input, browser debug hooks, job folders and render loop; all 756 lines read."
+    },
+    {
+      "path": "map.config.js",
+      "role": "Complete JS MAP data module and asset helper; all 228 lines read; public-facing prose treated only as presentation inputs, not fact/rights verification."
+    },
+    {
+      "path": "LICENSE",
+      "role": "Full MIT engine license plus inherited asset/content exclusions and stale upstream-file names."
+    },
+    {
+      "path": ".nojekyll",
+      "role": "Empty static-host marker; presence only, not deployment proof."
+    },
+    {
+      "path": "README.md",
+      "role": "Human entry, upstream attribution and company artwork ownership statement."
+    },
+    {
+      "path": "AGENTS.md",
+      "role": "Owning agent router and approval boundary."
+    },
+    {
+      "path": "CONTEXT.md",
+      "role": "Workspace scope, sources, process, outputs and human/publication gate."
+    },
+    {
+      "path": "docs/CONTEXT.md",
+      "role": "Private handbook shelf and public-deployment exclusion contract."
+    },
+    {
+      "path": ".githooks/docs-pre-commit",
+      "role": "Generated source hook wrapper; checked as installed file, not active Git config evidence."
+    },
+    {
+      "path": ".gitignore",
+      "role": "Parent-owned Task5E final recursive source-control eligibility rules; complete 16-line text read and exact final hash compared with independently accepted scoped rereview. Git eligibility is not deployment/content acceptance."
+    }
+  ],
+  "excluded": [
+    {
+      "path": "assets/truck.png",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/paver.png",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/roller.png",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/skidsteer.png",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/terrain.png",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/cottage.png",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/plant.png",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/mainstreet.png",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/cone.png",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/crew.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/truck.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/mack.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/res-curved.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/res-long.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/res-apron.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/res-narrow.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/res-shed.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/ba1-before.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/ba1-after.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/ba2-before.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/ba2-after.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/ba3-before.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/ba3-during.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/ba3-after.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/step1.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/step2.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/step3.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/step4.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/step5.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/step6.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/townhouses.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/subdivision.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/street.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/road.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/plant-load.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/excavation.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/removal.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/skid-paver.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/commercial.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/industrial.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/repair.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/paver.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/award-2025.jpg",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/seal-2026.png",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "assets/photos/logo.png",
+      "reason": "Image/media contents and image-rights/claim verification are outside the read-only source audit; paths and sizes inventoried and static references checked."
+    },
+    {
+      "path": "docs/handbook/_generated/",
+      "reason": "Retained legacy shared-factory HTML/PDF/receipt outputs; not canonical reader inputs for this website. No hand edits or acceptance claim."
+    }
+  ],
+  "pages": [
+    {
+      "id": "index",
+      "kind": "overview",
+      "sources": [
+        "README.md",
+        "CONTEXT.md",
+        "index.html",
+        "map.config.js"
+      ]
+    },
+    {
+      "id": "collaboration",
+      "kind": "overview",
+      "sources": [
+        "AGENTS.md",
+        "CONTEXT.md",
+        "README.md",
+        "index.html",
+        "docs/CONTEXT.md"
+      ]
+    },
+    {
+      "id": "guide",
+      "kind": "how-to",
+      "sources": [
+        "CONTEXT.md",
+        "index.html"
+      ]
+    },
+    {
+      "id": "architecture",
+      "kind": "concept",
+      "sources": [
+        "index.html",
+        "map.config.js"
+      ]
+    },
+    {
+      "id": "CONTEXT",
+      "kind": "overview",
+      "sources": [
+        "AGENTS.md",
+        "CONTEXT.md",
+        "docs/CONTEXT.md"
+      ]
+    },
+    {
+      "id": "status",
+      "kind": "status",
+      "sources": [
+        "CONTEXT.md",
+        "index.html",
+        "map.config.js"
+      ]
+    },
+    {
+      "id": "tutorials/trace-a-stop-offline",
+      "kind": "tutorial",
+      "sources": [
+        "map.config.js",
+        "index.html"
+      ]
+    },
+    {
+      "id": "how-to/change-approved-content",
+      "kind": "how-to",
+      "sources": [
+        "CONTEXT.md",
+        "map.config.js",
+        "index.html"
+      ]
+    },
+    {
+      "id": "how-to/preview-and-review",
+      "kind": "how-to",
+      "sources": [
+        "CONTEXT.md",
+        "index.html"
+      ]
+    },
+    {
+      "id": "architecture/browser-lifecycle",
+      "kind": "concept",
+      "sources": [
+        "index.html",
+        "map.config.js"
+      ]
+    },
+    {
+      "id": "developer/engine-and-extension-points",
+      "kind": "developer",
+      "sources": [
+        "index.html",
+        "map.config.js",
+        "LICENSE",
+        "CONTEXT.md"
+      ]
+    },
+    {
+      "id": "reference/map-config",
+      "kind": "reference",
+      "sources": [
+        "map.config.js",
+        "index.html"
+      ]
+    },
+    {
+      "id": "reference/browser-controls-and-qa",
+      "kind": "reference",
+      "sources": [
+        "index.html",
+        "map.config.js"
+      ]
+    },
+    {
+      "id": "reference/dependencies-assets-and-rights",
+      "kind": "reference",
+      "sources": [
+        "index.html",
+        "map.config.js",
+        "README.md",
+        "LICENSE",
+        "CONTEXT.md"
+      ]
+    },
+    {
+      "id": "operations/troubleshoot-and-release-gates",
+      "kind": "how-to",
+      "sources": [
+        "index.html",
+        "CONTEXT.md",
+        "docs/CONTEXT.md",
+        ".githooks/docs-pre-commit"
+      ]
+    },
+    {
+      "id": "maintenance/source-review-and-status",
+      "kind": "developer",
+      "sources": [
+        "AGENTS.md",
+        "CONTEXT.md",
+        "docs/CONTEXT.md",
+        "index.html",
+        "map.config.js",
+        ".githooks/docs-pre-commit",
+        ".gitignore"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "map-map-root",
+      "kind": "javascript-config",
+      "source": "map.config.js",
+      "docs": [
+        "reference/map-config"
+      ],
+      "claims": [
+        "title:string (no fallback); badge:string (no fallback); odometerKm:number (fallback 5600 only in HUD, current 70); opening:object; mascot:object; vehicles?:object keyed by ride id; chapters:array.",
+        "opening/mascot/chapters assumed present. Direct property access can throw if missing. Root is executable JS, not JSON/schema-validated input."
+      ]
+    },
+    {
+      "id": "map-opening",
+      "kind": "javascript-config",
+      "source": "map.config.js",
+      "docs": [
+        "reference/map-config"
+      ],
+      "claims": [
+        "headline?:string[]; tagline?:string; arc?:string; hero?:{image:string,caption?:string}; props?:PaintSpec[]; place?:{headline,tagline,arc,hero,caption} placement overrides.",
+        "Headline fallback [The Field Map of, MAP.badge]. Each optional visual is built only when present. Hero caption is static handwriting; hero image has no chapter tag/click interaction."
+      ]
+    },
+    {
+      "id": "map-opening-place-headline",
+      "kind": "javascript-config",
+      "source": "map.config.js",
+      "docs": [
+        "reference/map-config"
+      ],
+      "claims": [
+        "font default 700 96px Caveat; ink #3b2f21; x 5.2; y 5.0; h 2.6; tilt -.02.",
+        "Headline alignment forced center; no config w/z forwarded."
+      ]
+    },
+    {
+      "id": "map-opening-place-tagline",
+      "kind": "javascript-config",
+      "source": "map.config.js",
+      "docs": [
+        "reference/map-config"
+      ],
+      "claims": [
+        "font default 500 58px Caveat; ink #8a765a; x 5.2; y 6.6; h .8; z .06.",
+        "Alignment forced center; no tilt forwarded."
+      ]
+    },
+    {
+      "id": "map-opening-place-arc",
+      "kind": "javascript-config",
+      "source": "map.config.js",
+      "docs": [
+        "reference/map-config"
+      ],
+      "claims": [
+        "font default 500 52px Caveat; ink #6d5c43; w 1400; x 5.4; y 3.4; h .72; z .06; tilt .015.",
+        "Only documented consumed fields are supported."
+      ]
+    },
+    {
+      "id": "map-opening-place-hero-caption",
+      "kind": "javascript-config",
+      "source": "map.config.js",
+      "docs": [
+        "reference/map-config"
+      ],
+      "claims": [
+        "hero: x 11.3,y 4.7,h 3.1,sway .008. caption: font 500 44px Caveat,ink #8a765a,x 11.3,y 2.85,h .5,z .05.",
+        "Hero forces wallPin=true/framed=true. No caption tilt/w forwarded."
+      ]
+    },
+    {
+      "id": "map-mascot-vehicles",
+      "kind": "javascript-config",
+      "source": "map.config.js",
+      "docs": [
+        "reference/map-config"
+      ],
+      "claims": [
+        "mascot.scale default 1.15 (current 1.0); sit/walkA/walkB each {file,h,yOff?=0}; sit.perch?=[-.19,0] interpreted [y,x]. vehicles?[id]:{file,h,yOff?=0,perch?=[0,0],flies?}; current vehicles paver/roller/skidsteer, no flies enabled.",
+        "All three mascot poses required. file is relative to assets/. Sprite file may repeat. sit yOff is applied at load but sit Y is subsequently recomputed from sit.h and perch each frame."
+      ]
+    },
+    {
+      "id": "map-chapter",
+      "kind": "javascript-config",
+      "source": "map.config.js",
+      "docs": [
+        "reference/map-config"
+      ],
+      "claims": [
+        "id:string; stop?:string; wp?:string; wpX?:number; ride?:vehicle-id; finale?:boolean; art?:PaintSpec[]; props?:PaintSpec[]; prints?:PaintSpec[]; note?:NoteSpec; extraNotes?:NoteSpec[]; aphorism?:WritingSpec; extraWriting?:WritingSpec[]; folder?:Folder.",
+        "wpX default 15.2+i*16; waypoint label default WP· + zero-padded zero-based i. stop absent -> no nav button. folder controls note/print clickability; art/props/extraNotes not tagged. finale chapters duplicated at -112."
+      ]
+    },
+    {
+      "id": "map-paintspec",
+      "kind": "javascript-config",
+      "source": "map.config.js",
+      "docs": [
+        "reference/map-config"
+      ],
+      "claims": [
+        "file:string; x:number; h?:number=3; y?:number; wallPin?:boolean=false; framed?:boolean=false; zBack?:number; sway?:number=.02; flip?:boolean=false; bob?:number=0.",
+        "Default z=PATH_Z=2.5; when not wallPin and zBack supplied, z=2.5-zBack. wallPin forces z .03. Unset y uses h/2. prints seed framed:true,sway:.006 but each entry can override. Phase is random inside cutout and not configurable through paintSpec."
+      ]
+    },
+    {
+      "id": "map-notespec",
+      "kind": "javascript-config",
+      "source": "map.config.js",
+      "docs": [
+        "reference/map-config"
+      ],
+      "claims": [
+        "lines:string[]; title?:string=null; pin?:string|false|null default #b0503c (false/null disables drawn pin); font?:CSS-font default 600 46px Caveat; w?:number=640; x?:number=cx+2.5; y?:number=5.9; h?:number=2.3; z?:number=.07; tilt?:number= i odd .03 else -.03.",
+        "Measured text can expand width; line height 56. ink/paper/pad exist only in noteTexture helper defaults (#3b2f21/#fdf6e6/34) and are NOT passed from NoteSpec; do not document them as working config knobs."
+      ]
+    },
+    {
+      "id": "map-writingspec",
+      "kind": "javascript-config",
+      "source": "map.config.js",
+      "docs": [
+        "reference/map-config"
+      ],
+      "claims": [
+        "lines:string[]; font?:CSS-font default 600 58px Caveat; ink?:string=#6d5c43; align?:string (center supported; otherwise left); w?:number=1024 via texture helper; x?:number=cx+11; y?:number=6.8; h?:number=1; z?:number=.07; tilt?:number=i odd -.02 else .02.",
+        "Text is reduced to fit width using px font regex when too wide; font should contain a px size. Line height 96."
+      ]
+    },
+    {
+      "id": "map-folder",
+      "kind": "javascript-config",
+      "source": "map.config.js",
+      "docs": [
+        "reference/map-config"
+      ],
+      "claims": [
+        "title:string; lede?:string default empty; pairs?:[{before:string,after:string,cap:string}]; photos?:[{file:string,cap:string}].",
+        "Relative image URLs prefix assets/. pairs render first with two images and range min0 max100 initial50; photos follow, loading=lazy. Text set via textContent or escaped into HTML. No remote record lookup or file-browser behavior."
+      ]
+    },
+    {
+      "id": "browser-debug-1",
+      "kind": "browser-debug",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#debug-globals"
+      ],
+      "claims": [
+        "window.__worldSeek(v)",
+        "v numeric progress target; no validation/clamping in this hook.",
+        "Sets targetP only; render loop damps p toward it and wraps progress.",
+        "undefined; the block-body arrow function has no return statement. Browser QA/debug helper, not a stable service API."
+      ]
+    },
+    {
+      "id": "browser-debug-2",
+      "kind": "browser-debug",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#debug-globals"
+      ],
+      "claims": [
+        "window.__scene",
+        "None (property).",
+        "Exposes the live mutable Three.Scene object.",
+        "scene reference."
+      ]
+    },
+    {
+      "id": "browser-debug-3",
+      "kind": "browser-debug",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#debug-globals"
+      ],
+      "claims": [
+        "window.__worldState()",
+        "None.",
+        "Read-only snapshot construction.",
+        "{p,targetP,cam:[x,y,z],travelers:{fox:boolean,[vehicleId]:boolean},fox:null|{sitVisible,walkVisible,sitH,walkH,sitY,groupY,scale,topLayer},pending,loaded}. Presence flags mean meshes loaded, not active mode or successful image rights/UX."
+      ]
+    },
+    {
+      "id": "browser-debug-4",
+      "kind": "browser-debug",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#debug-globals"
+      ],
+      "claims": [
+        "window.__openFolder(id)",
+        "Existing chapter id whose chapter has folder. Current ids are residential, builders, base, process, recognition, quote.",
+        "Looks up chapter and calls openFolder; unknown id is not guarded and can throw.",
+        "undefined from openFolder, on success."
+      ]
+    },
+    {
+      "id": "browser-debug-5",
+      "kind": "browser-debug",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#debug-globals"
+      ],
+      "claims": [
+        "window.__ft / window.__ftLast",
+        "Optional caller-created object with push method (normally an array); __ftLast stores previous timestamp.",
+        "If __ft truthy, each render appends frame delta milliseconds and updates __ftLast. Not created by the app and can grow without bound while set.",
+        "No helper return."
+      ]
+    },
+    {
+      "id": "query-p",
+      "kind": "url-query",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#query-parameters"
+      ],
+      "claims": [
+        "p=targetP=0 initially.",
+        "Presence -> parseFloat(value) || 0, clamp to [0,.999]; sets current and target before rendering.",
+        "Initial seek only; does not persist progress or disable motion."
+      ]
+    },
+    {
+      "id": "query-qa",
+      "kind": "url-query",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#query-parameters"
+      ],
+      "claims": [
+        "Absent -> false. Presence only matters: ?qa=false also enables it.",
+        "new URLSearchParams(location.search).has('qa')",
+        "Hides loader immediately on first animation frame. It does not run assertions, freeze random textures, stop animation or prove all assets loaded."
+      ]
+    },
+    {
+      "id": "user-control-1",
+      "kind": "browser-control",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#user-controls"
+      ],
+      "claims": [
+        "Wheel / vertical touch swipe",
+        "wheel e.deltaY; touchstart first clientY and touchmove delta",
+        "targetP += wheel delta*.00007; touch delta*.00007*5. Handlers passive; wheel/touch movement ignored while folder open."
+      ]
+    },
+    {
+      "id": "user-control-2",
+      "kind": "browser-control",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#user-controls"
+      ],
+      "claims": [
+        "Keyboard route / Escape",
+        "ArrowDown, PageDown or Space; ArrowUp or PageUp; Escape when folder open.",
+        "Down/PageDown/Space increments targetP .012; Up/PageUp decrements .012. Folder open causes all route key behavior to return; Escape closes folder. No preventDefault or focus trap."
+      ]
+    },
+    {
+      "id": "user-control-3",
+      "kind": "browser-control",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#user-controls"
+      ],
+      "claims": [
+        "Stops navigation buttons",
+        "Click or keyboard-activate the generated button for each truthy chapter.stop; focus alone does not seek/open.",
+        "Sample camera curve601 points toward wpX+1, dismiss hint and after1400ms open chapter folder if present. Timers not cancelled/coalesced."
+      ]
+    },
+    {
+      "id": "user-control-4",
+      "kind": "browser-control",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#user-controls"
+      ],
+      "claims": [
+        "Note/photo tap and cursor",
+        "Canvas pointerdown/up with movement distance<8px; pointermove.",
+        "Raycast registered clickable meshes; opens nearest hit folder. Hover toggles canvas.hot. Canvas pointermove also updates camera parallax normalized mx/my."
+      ]
+    },
+    {
+      "id": "user-control-5",
+      "kind": "browser-control",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#user-controls"
+      ],
+      "claims": [
+        "Folder close and comparisons",
+        "Visible close button, Escape, or click backdrop itself; before/after range input.",
+        "Close removes open class and attempts previous focus restore. Open focuses close. Range min0/max100/default50 updates CSS --cut percentage."
+      ]
+    },
+    {
+      "id": "user-control-6",
+      "kind": "browser-control",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#user-controls"
+      ],
+      "claims": [
+        "Resize / narrow layout",
+        "Window resize; CSS width<=700px.",
+        "Recompute FOV/aspect and renderer size. Small CSS hides badge/odometer, reduces stop button sizes; no separate mobile engine."
+      ]
+    },
+    {
+      "id": "user-control-7",
+      "kind": "browser-control",
+      "source": "index.html",
+      "docs": [
+        "reference/browser-controls-and-qa#user-controls"
+      ],
+      "claims": [
+        "Contact / fallback links",
+        "Static tel: and business HTTPS links; fallback PDF link if WebGL renderer creation throws.",
+        "Browser/OS navigation/contact action, not a quote form or app API. Do not activate during source audit."
+      ]
+    },
+    {
+      "id": "static-preview",
+      "kind": "documented-tool-command",
+      "source": "index.html",
+      "docs": [
+        "how-to/preview-and-review#start-and-stop"
+      ],
+      "claims": [
+        "python3 -m http.server 8098 --bind 127.0.0.1 is the retained documented preview command; no project CLI/env/exit contract; unrun runtime."
+      ]
+    },
+    {
+      "id": "module-load-and-textures",
+      "kind": "lifecycle",
+      "source": "index.html",
+      "docs": [
+        "architecture/browser-lifecycle",
+        "operations/troubleshoot-and-release-gates"
+      ],
+      "claims": [
+        "Pinned Three.js external import before renderer fallback; font gate errors swallowed; texture errors increment loaded; no app backend."
+      ]
+    },
+    {
+      "id": "world-layout-and-rides",
+      "kind": "rendering",
+      "source": "index.html",
+      "docs": [
+        "developer/engine-and-extension-points",
+        "reference/map-config"
+      ],
+      "claims": [
+        "Fixed span112/bridge10/pathZ2.5/wallH15, cadence15.2+16i, strict first-match ride window pad1.2 length16, seam copies and hard-coded curves."
+      ]
+    },
+    {
+      "id": "folder-trust-and-focus",
+      "kind": "browser-ui",
+      "source": "index.html",
+      "docs": [
+        "reference/map-config#folder",
+        "operations/troubleshoot-and-release-gates"
+      ],
+      "claims": [
+        "textContent and escaped attributes/captions; pairs before photos; range0..100 starts50; no focus trap; no path sanitizer/schema/auth boundary."
+      ]
+    },
+    {
+      "id": "asset-paths-and-license",
+      "kind": "asset-rights-boundary",
+      "source": "LICENSE",
+      "docs": [
+        "reference/dependencies-assets-and-rights"
+      ],
+      "claims": [
+        "MIT engine vs separately owned artwork/content; stale upstream exclusions not rights proof; no image-content inspection."
+      ]
+    },
+    {
+      "id": "publication-boundary",
+      "kind": "owner-contract",
+      "source": "CONTEXT.md",
+      "docs": [
+        "collaboration",
+        "operations/troubleshoot-and-release-gates#release-boundary"
+      ],
+      "claims": [
+        "Zack approves company copy/publication; company records remain at owner; developer docs not fact approval."
+      ]
+    },
+    {
+      "id": "private-doc-boundary",
+      "kind": "documentation-contract",
+      "source": "docs/CONTEXT.md",
+      "docs": [
+        "CONTEXT",
+        "operations/troubleshoot-and-release-gates#release-boundary"
+      ],
+      "claims": [
+        "Public business deployment must exclude private operational handbook and verification data; actual host/exclusion unknown."
+      ]
+    },
+    {
+      "id": "external-docs-hook",
+      "kind": "shell-wrapper",
+      "source": ".githooks/docs-pre-commit",
+      "docs": [
+        "operations/troubleshoot-and-release-gates#documentation-hook-limit"
+      ],
+      "claims": [
+        "Git root lookup failure exits2, otherwise exec external checker with registry/git-root; installation/active config unknown."
+      ]
+    },
+    {
+      "id": "docs-git-eligibility",
+      "kind": "gitignore-policy",
+      "source": ".gitignore",
+      "docs": [
+        "maintenance/source-review-and-status#source-control-eligibility"
+      ],
+      "claims": [
+        "Only manifest.json/review.json are exceptions under ignored docs/verification; auxiliary author evidence JSON stays local.",
+        "Ordinary authored handbook Markdown/sidebar are not blocked; assets ignored; docs generated/.generated/build/node_modules/.fixture directories ignored recursively, and handbook environment/credential/log/database patterns ignored recursively.",
+        "Git ignore is not staging, untracking, independent acceptance or public deployment exclusion."
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "two-local-photo-paths",
+      "page": "tutorials/trace-a-stop-offline",
+      "command": [
+        "python3",
+        "-c",
+        "from pathlib import Path; paths=('assets/photos/ba1-before.jpg','assets/photos/ba1-after.jpg'); print('\\n'.join(p+': '+str(Path(p).is_file()) for p in paths))"
+      ],
+      "effects": "Read-only filesystem existence checks from project root, offline; no file reads/decoding, app runtime, imports/dependencies/network or writes.",
+      "expected": "assets/photos/ba1-before.jpg: True\nassets/photos/ba1-after.jpg: True"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "first-offline-stop-trace",
+      "role": "first-use",
+      "start": "index",
+      "pages": [
+        "tutorials/trace-a-stop-offline",
+        "reference/map-config"
+      ],
+      "success": "Reader follows residential note/print folder tagging, computes strict paver window(14,30), distinguishes config/folder prose and copies metadata check with two True lines."
+    },
+    {
+      "id": "approved-content-change-plan",
+      "role": "maintainer",
+      "start": "index",
+      "pages": [
+        "collaboration",
+        "how-to/change-approved-content",
+        "reference/map-config",
+        "how-to/preview-and-review"
+      ],
+      "success": "Reader identifies the correct field and owner approval for a caption/photo request, all affected consumers, deferred browser checklist and no-publication boundary without editing product."
+    },
+    {
+      "id": "renderer-change-impact",
+      "role": "developer",
+      "start": "index",
+      "pages": [
+        "architecture/browser-lifecycle",
+        "developer/engine-and-extension-points",
+        "maintenance/source-review-and-status"
+      ],
+      "success": "Reader locates helpers/constants and derives regression scope for a new stop/ride without inventing automatic route growth or test tooling."
+    },
+    {
+      "id": "missing-scene-and-release-boundary",
+      "role": "reviewer",
+      "start": "index",
+      "pages": [
+        "operations/troubleshoot-and-release-gates",
+        "reference/dependencies-assets-and-rights",
+        "status"
+      ],
+      "success": "Reader separates import/WebGL/image-failure handling and states missing host/private-doc/rights/browser acceptance evidence without claiming a diagnosis or release."
+    }
+  ],
+  "not_applicable": [
+    {
+      "topic": "project-installer-build-and-package-commands",
+      "reason": "Checkout has no package/lockfile/build tool/installer; static files plus externally loaded browser dependency."
+    },
+    {
+      "topic": "http-backend-rest-api-and-quote-submission",
+      "reason": "No server/service routes/quote form; tel/business/PDF links are navigation only."
+    },
+    {
+      "topic": "environment-config-precedence",
+      "reason": "No project env loader/variables; one imported executable MAP object without precedence resolution."
+    },
+    {
+      "topic": "database-crm-auth-record-schema",
+      "reason": "Presentation does not ingest company records, own a database, authenticate users or define record schemas."
+    },
+    {
+      "topic": "native-automated-tests-ci-and-fixtures",
+      "reason": "Complete authored path inventory contains none; browser debug hooks are not a runner. No app test fixture added during docs authoring."
+    },
+    {
+      "topic": "product-deployment-and-supported-browser-matrix",
+      "reason": "No deploy workflow/host proof or supported browser-version matrix; publication and live UI review remain owner-gated."
+    },
+    {
+      "topic": "public-image-content-and-business-record-documentation",
+      "reason": "Image bytes and private company/customer/financial records are not developer-documentation inputs; ownership/provenance remain at business owner."
+    }
+  ]
+}

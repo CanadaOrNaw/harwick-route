@@ -1,0 +1,43 @@
+[
+  "index",
+  "collaboration",
+  {
+    "type": "category",
+    "label": "Learn and change content",
+    "collapsed": false,
+    "items": [
+      "tutorials/trace-a-stop-offline",
+      "guide",
+      "how-to/change-approved-content",
+      "how-to/preview-and-review"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Architecture and development",
+    "items": [
+      "architecture",
+      "architecture/browser-lifecycle",
+      "developer/engine-and-extension-points"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Technical reference",
+    "items": [
+      "reference/map-config",
+      "reference/browser-controls-and-qa",
+      "reference/dependencies-assets-and-rights"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Review and maintenance",
+    "items": [
+      "operations/troubleshoot-and-release-gates",
+      "status",
+      "maintenance/source-review-and-status",
+      "CONTEXT"
+    ]
+  }
+]
